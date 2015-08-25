@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>Draw</title>
+	<meta name="viewport"
+	      content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"/>
+	<!-- 本地应用，离线，全屏 -->
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+	<!-- 数字格式化成手机号 -->
+	<meta content="telephone=no" name="format-detection"/>
+	<!-- 不处理ICON -->
+	<link rel="apple-touch-icon-precomposed" href="/ria/images/apple-touch-icon-precomposed.png"/>
+	<!-- iPad Landscape—1024x748 -->
+	<link rel="apple-touch-startup-image" media="screen and (max-device-width: 1024px) and (orientation: landscape)"
+	      href="/ria/images/startup-ipad-landscape.png"/>
+	<!-- iPad Portrait—768x1004 -->
+	<link rel="apple-touch-startup-image" media="screen and (max-device-width: 1024px) and (orientation: portrait)"
+	      href="/ria/images/startup-ipad-portrait.png"/>
+	<!-- 320x460 for iPhone 3GS, iPod touch -->
+	<link rel="apple-touch-startup-image"
+	      media="screen and (max-device-width: 480px) and not (-webkit-min-device-pixel-ratio: 2)"
+	      href="/ria/images/startup-iphone.png"/>
+	<!-- 640x920 for retina display -->
+	<link rel="apple-touch-startup-image"
+	      media="screen and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)"
+	      href="/ria/images/startup-iphone.png"/>
+	<link href="/ria/css/screen.css" media="screen" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 登录 -->
+<section id="loginPage" class="page">
+	<div class="top">
+		<div class="top-banding"></div>
+	</div>
+	<div class="center">
+		<div class="logo"></div>
+		<div class="login-btns">
+			<a href="javascript:void(0);">使用新浪微博登录</a>
+		</div>
+	</div>
+	<div class="bottom"></div>
+</section>
+<!-- 信息 -->
+<section id="infomationPage" class="page hide">
+	<div class="top">
+		<div class="top-banding"></div>
+		<div class="top-content">
+			<div class="user-nick">@北京中关村</div>
+			<div class="user-info">
+				<img src="http://tp4.sinaimg.cn/1458085847/50/5610534303/1"/>
+
+				<div>
+					关注：11111<br/>关注：11111<br/>关注：11111<br/>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="center">
+		<div class="btn-start"></div>
+	</div>
+	<div class="bottom">
+		<div class="btn-logout"></div>
+	</div>
+</section>
+<!-- 画图 -->
+<section id="drawPage" class="page hide">
+	<div class="top">
+		<div class="top-banding"></div>
+		<div class="top-content">标题长</div>
+	</div>
+	<div class="center">
+		<canvas id="canvas"></canvas>
+		<div class="tools">
+			<div class="ani tool-pallet"></div>
+			<div class="ani tool-pen"></div>
+			<div class="ani tool-draft"></div>
+			<div class="ani tool-recycle"></div>
+			<div class="ani btn-submit"></div>
+			<div class="item-ifm"></div>
+				<div class="color">
+					<div class="red"></div>
+					<div class="yellow"></div>
+					<div class="blue"></div>
+					<div class="black"></div>
+				</div>
+				<div class="stoke">
+					<div stokewidth="8"></div>
+					<div stokewidth="6"></div>
+					<div stokewidth="4"></div>
+					<div stokewidth="2"></div>
+				</div>
+		</div>
+	</div>
+</section>
+<!-- 对话框 -->
+<section id="msg">
+	<div id="alertContainer">
+		<!--<a id="alertCloseBtn" href="javascript:void(0);"></a>-->
+		<div id="alertTitle"></div>
+		<div id="alertContent">
+		</div>
+	</div>
+</section>
+<!-- 调试框 -->
+<section id="debugPage" class="page hide"></section>
+
+
+<script src="/ria/js/zepto/zepto.js"></script>
+<script src="/ria/js/zepto/detect.js"></script>
+<script src="/ria/js/zepto/event.js"></script>
+<script src="/ria/js/zepto/touch.js"></script>
+<script src="/ria/js/zepto/diff.js"></script>
+<script src="/ria/js/log.js"></script>
+<script src="/ria/js/alert.js"></script>
+<script src="/ria/js/draw.js"></script>
+<script src="/ria/js/main.js"></script>
+</body>
+</html>
+

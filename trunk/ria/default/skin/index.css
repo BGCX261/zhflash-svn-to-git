@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import "common.css";
+
+.top{ width:100%; height:450px; margin:0px auto;}
+
+.top .recomm{ width:615px; height:450px; float:left;}
+.top .recomm .title{ height:21px; width:100%; background:url(recom.jpg) no-repeat;}
+.top .recomm .box{ height:420px; width:100%; margin:0px;}
+.top .recomm .box .item{ height:140px; width:140px; margin:0px; float:left; text-align:center}
+.top .recomm .box .item img{ width:140px; height:105px;}
+.top .recomm .box .item span{ width:140px; height:25px; line-height:25px}
+.top .hot{ width:203px; height:450px; float:left; background:url(HOT.jpg) no-repeat;}
+.top .hot .box{ height:400px; margin:36px auto auto auto; width:200px;}
+.top .hot .box .item{ width:100px; height:100px; float:left; margin:0px; text-align:center}
+.top .hot .box .item img{ width:80px; height:75px;}
+.top .hot .box .item span{ display:block; width:100px; height:25px; line-height:25px; clear:both}
+
+
+.bar{ width:100%; height:300px; margin:5px auto; background:url(bar-bg.jpg) no-repeat;}
+.bar .title{ width:770px; margin:0px auto; height:30px; line-height:23px; color:#009900; font-weight:bolder;}
+.bar .box{ width:840px; height:260px; margin:0px auto;}
+.bar .box .item{ width:140px; height:130px; float:left; margin:0px; text-align:center;}
+.bar .box .item img{ width:130px; height:100px;}
+.bar .box .item span{ width:140px; height:30px;}

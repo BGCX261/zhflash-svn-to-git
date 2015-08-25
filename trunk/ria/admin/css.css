@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+body,html{ margin:0px; padding:6px; line-height:180%; font-size:12px;font-weight:normal; background-color:#f0FDF1}
+
+table{ width:100%; margin:0px auto 10px auto; background-color:#FFFFFF; border-collapse:collapse; border-left:2px solid #000; border-top:2px solid #000; border-right:1px solid #000; border-bottom:1px solid #000;}
+	table th, table td{border-bottom:1px solid #000; border-right:1px solid #000; line-height:26px; padding:0px 6px;}
+	table th{ background-color:#CCFFCC; text-align:center; font-weight:bold;}
+	
+dl{ width:96%; margin:10px auto; display:block; background-color:#FFFFFF; padding:0px; padding-bottom:10px; border:1px solid #DEDEDE;}
+	dl dt{ font-size:16px; font-weight:bolder; clear:both; text-align:left; text-indent:1em; line-height:30px; display:block; width:100%; margin:0px; background-color:#CCFFCC; border-bottom:1px solid #DEDEDE; margin-bottom:6px;}
+	dl dd{ display:block; margin:0px auto; padding:0px; width:96%; line-height:36px; clear:both}
+	dl dd label{ display:block; width:120px;height:auto; float:left}
+	
+dl input[type='text'],dl input[type='password']{width:40%;height:22px;line-height:22px;}
+dl textarea{width:40%;height:66px;line-height:22px;}
+

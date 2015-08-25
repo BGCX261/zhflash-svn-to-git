@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteBase /
+
+RewriteRule ^(.*)$ index.php?_router_=$1&%{QUERY_STRING}

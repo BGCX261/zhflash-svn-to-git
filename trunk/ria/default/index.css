@@ -1,0 +1,148 @@
+@import "common.css";
+
+/*------- stage -------*/
+.stage{width:960px; margin:0 auto; padding:9px 0; position:relative; z-index:0;}
+.stage .more{float:right; font-family:"宋体";font-weight:normal;color:#5b8f0a;}
+
+	.leftCol{float:left; width:649px; /*background:url(bg_stage_t.png) 0 0 no-repeat #f8f8f8;*/ background:#f8f8f8; border:1px solid #dddfe1;
+	-moz-border-radius:3px;-webkit-border-radius:3px;-ms-border-radius:3px;border-radius:3px;
+	}
+		.leftColBg{/*background:url(bg_stage_b.png) 0 bottom no-repeat;*/padding:8px;}
+		.homePage .leftColBg{height:1195px;}
+		.colBox{/*background:url(bg_colR_b.png) 0 bottom;*/ margin-bottom:9px; position:relative; background:#fff; border:1px solid #dddfe1;
+		-moz-border-radius:3px;-webkit-border-radius:3px;-ms-border-radius:3px;border-radius:3px;}
+		.colBox .title{height:34px; line-height:34px; /*background:url(bg_colR_t.png) 0 0;*/ background:#f8f8f8; border-bottom:1px solid #dddfe1;  padding:0 12px; position:relative;}
+		.colBox .title strong{font-size:14px; color:#2a2a2a; font-weight:bold;}
+		.colBox .title .num{padding:0 0 0 6px; font-weight:bold; font-size:14px; color:#ccc;}
+		.colBox .title .rss{ position:absolute; margin:0 0 0 9px; top:9px; text-indent:-9999pt; height:18px; width:72px; background:url(icon.png) 0 -830px;}
+		.blueBox{border:1px solid #99d2ed;}
+		.blueBox .title{background:#e9f7fe;border-bottom:1px solid #99d2ed;}
+		.blueBox .title .rss{background:url(icon.png) 0 -799px;}
+		
+		/*.blueBox{background:url(bg_colB_b.png) 0 bottom;}
+		.blueBox .title{background:url(bg_colB_t.png) 0 0;}
+		.blueBox .title .rss{background:url(icon.png) 0 -799px;}*/
+		
+		.picNews{height:333px; overflow:hidden;}
+			#slides{height:280px; width:375px; overflow:hidden; position:absolute; left:9px; top:43px; z-index:1;}
+			#picTitle{position:absolute; height:28px; line-height:28px; width:375px; left:9px; top:295px; z-index:2;}
+			#picTitle .bg{position:absolute; height:28px; width:375px; z-index:1; background:#000; top:0; left:0;
+			filter: alpha(opacity=45);  /*for IE*/
+			-moz-opacity:0.45;  /*for Firefox*/
+			opacity:0.45;  /*for Safari*/
+			}
+			#picTitle strong{position:absolute; left:9px; top:1px; z-index:2; font-size:14px; font-weight:bold;color:#fff;}
+			#picNavi{width:236px;position:absolute; right:9px; top:46px;}
+			#picNavi li a{padding:0 0 0 15px; display: block;}
+			#picNavi li a span{cursor:pointer;display:block;height:28px;padding:0 3px;line-height:28px;background:url(db_c.gif) 0 bottom repeat-x;}
+			#picNavi li a.activeSlide span{background-color:#f5f5f5; color:#DF7E00; font-weight:bold;}
+			#picNavi li a.activeSlide{background:url(on.png) 2px 9px no-repeat;}
+			#picNavi li s{ display:none;}
+			#picNavi li s.news{display:inline; position:absolute; margin:7px 0 0 5px; width:20px; height:10px;background:transparent url(icon.png) repeat scroll right -202px;}
+					
+		.articleNews{height:383px; overflow:hidden;}
+			.articleNews .list{margin:12px;}
+			.articleNews .col{width:290px; float:left; height:80px; padding:3px 0 0 12px;}
+			.articleNews .odd{ padding:3px 12px 0 0;background:url(hr_y.png) right 0 repeat-y;}
+			.articleNews h3 a{font-weight:bold; padding-right:6px;}
+			.articleNews .new h3 a.n{padding-right:20px;background:url(icon.png) right -198px;}
+			.articleNews p{height:38px; background:url(bg_al.png); overflow:hidden; line-height:18px; padding:13px 9px 0 9px;}
+			
+		.videoNews{height:680px; margin-bottom:10;}
+			.videoNews .col{padding:9px;}
+			.videoNews .picList{height:450px; background:url(hr_x.png) 0 bottom repeat-x; color:#cacaca;}
+			.videoNews .picList li{float:left; width:135px; height:180px; padding:0 9px; _overflow:hidden; }
+			.videoNews .picList .picBox{display:inline-block; position:relative; margin:5px auto;}
+			.videoNews .picList .picBox a{background:url(imgBox_120x90_b.png) right bottom no-repeat; display:inline-block;}
+			.videoNews .picList .picBox a img{padding:4px; background:url(imgBox_120x90_t.png) right 0 no-repeat; width:120px; height:90px;}
+			.videoNews .picList .picBox a .video{position:absolute; left:43px; top:30px; height:43px; width:43px; background: url(video.png) right 0;}
+			.videoNews .picList .picBox a:hover{background:url(imgBox_120x90_b.png) 0 bottom no-repeat;}
+			.videoNews .picList .picBox a:hover img{background:url(imgBox_120x90_t.png) 0 0 no-repeat;}
+			.videoNews .picList .picBox a:hover .video{background: url(video.png) 0 0;left:44px; top:29px;}
+			.videoNews .picList span{display:block; clear:both;}
+			.videoNews .picList strong{display:block; padding:6px 0 9px 0; line-height:14px; text-align:left; }
+			.videoNews .picList .t{padding:2px;}
+			.videoNews .picList .c{padding:2px;}.videoNews .picList .c a{color:#5b8f0a; text-decoration:underline;}
+			.videoNews .picList .v{padding:2px;}
+			.videoNews .picList .new{padding-right:20px; display:inline-block; background:url(icon.png) right -195px;}
+			.videoNews .bottom{margin:9px 0 0 9px;}
+			.videoNews .bottom li{height:24px; line-height:24px; float:left; width:200px;}
+			.videoNews .bottom li a.c{padding-right:6px;}
+			.videoNews .bottom li a.n{padding-right:22px;background:url(icon.png) right -200px;}
+			
+			.videoNews .cataInfo{ display:block; margin:0px; padding:0px; margin:10px auto; width:96%; line-height:28px;}
+			.videoNews .cataInfo dt{ font-weight:bold; font-size:12px; clear:both;}
+			.videoNews .cataInfo dd{ float:left; margin:0px 4px; white-space:nowrap;}
+			
+	.rightCol{width:300px; float:right;}
+		.sideCol{background:url(bg_side_b.png) 0 bottom; margin-bottom:9px; position:relative;}
+		.sideCol .title{background:url(bg_side_t.png) 0 0; height:34px; line-height:34px; padding:0 15px; color:#2a2a2a; font-weight:bold;}
+		.sideCol .title span{background-image:url(icon.png); padding:0 0 0 20px; display:inline-block;}
+		.sideCol .colFoot{background:url(bg_side_f.png); height:38px; position:absolute; bottom:0; width:300px;}
+		.sideCol .colFoot a{ position:absolute; right:12px; top:18px; font-family:"宋体";color:#5b8f0a;background:url(icon.png) 0 -234px no-repeat; padding-left:15px;}
+		
+		.rightCol .indexTop{height:250px; width:300px; overflow:hidden;}
+			.rightCol .indexTop .title span{background-position:0 -1098px;}
+			.rightCol .indexTop .list{padding:0 10px; margin-top:-1px; overflow:hidden; height:207px;}
+			.rightCol .indexTop .list li{width:140px; float:left;}
+			.rightCol .indexTop .list li a{padding:6px 12px 4px 12px; width:116px; height:15px; line-height:15px; float:left; border-bottom:1px solid #f3efdf;border-right:1px solid #f3efdf;}
+			.rightCol .indexTop .list a:hover{background:#f3efdf;}
+			.rightCol .indexTop .list strong{padding-right:10px;background:url(icon.png) right -1108px no-repeat;}
+
+		.rightCol .music{height:220px; width:300px; overflow:hidden;}
+			.rightCol .music .title span{background-position:0 -63px;}
+			.rightCol .music .colBox{padding:3px 18px 6px 18px; background: none; border:none;}
+			.rightCol .music li{background:url(icon.png) 13px -729px no-repeat;padding-left:25px; height:24px; line-height:24px;}
+			.rightCol .music .hot a{padding-right:10px;background:url(icon.png) right -177px no-repeat;}
+			.rightCol .music .new a{padding-right:20px;background:url(icon.png) right -200px;}
+		
+		.rightCol .blessing{height:310px; width:300px; overflow:hidden;}
+			.rightCol .blessing .title span{background-position:0 -27px;}
+			.rightCol .blessing .text{line-height:18px; padding:6px 22px;}
+			.rightCol .blessing .list{padding:0 10px;}
+			.rightCol .blessing .list a{display:block; height:26px; line-height:26px; padding:0 12px; border-top:1px solid #f3efdf;}
+			.rightCol .blessing .list a:hover{background:#f3efdf;}
+			
+		.rightCol .article{height:155px; width:300px; overflow:hidden;}
+			.rightCol .article .title span{background-position:0 -101px;}
+			.rightCol .article .text{line-height:18px; padding:6px 22px;}
+			
+		.rightCol .links{height:242px; width:300px; overflow:hidden;}
+			.rightCol .links .title span{background-position:0 -133px;}
+			.rightCol .links .list{padding:0 10px;}
+			.rightCol .links .list li{width:140px; float:left;}.rightCol .links .list li img{display:block;}
+			.rightCol .links .list li.img a{height:31px;}
+			.rightCol .links .list li a{padding:6px 12px 4px 12px; width:116px; height:15px; line-height:15px; float:left; border-bottom:1px solid #f3efdf;border-right:1px solid #f3efdf;}
+			.rightCol .links .list a:hover{background:#f3efdf;}
+			.rightCol .links .colFoot a{background:url(icon.png) 0 -234px no-repeat;}
+
+		.rightCol .listHits{width:300px; padding-bottom:12px; overflow:hidden;}
+			.rightCol .listHits .title span{background-position:0 -355px;}
+			.rightCol .listHits .one{ display:inline-block; padding-bottom:6px;}
+			.rightCol .listHits .one span{float:left; padding:25px 0 0 12px; font-weight:bold;color:#5b8f0a;}
+			.rightCol .listHits .one a img{border:1px solid #eee; margin:6px 6px 0 6px; padding:1px; background:#fff; float:left;}.rightCol .listHits .one a:hover img{border:1px solid #5b8f0a;}
+			.rightCol .listHits .one a.n{float:right; width:180px; padding:6px 0 0 0; font-weight:bold; line-height:18px;}
+			.rightCol .listHits .one a.n em{color:#ccc; padding:0 0 0 20px; font-size:11px;background:url(icon.png) 9px -687px no-repeat;}
+			.rightCol .listHits .list{padding:0 10px;}
+			.rightCol .listHits .list .num{display:block; height:26px; line-height:26px; padding:0 12px; border-top:1px solid #f3efdf;}
+			.rightCol .listHits .list .num span{padding-right:6px; color:#999;}
+			.rightCol .listHits .list .num:hover{background:#f3efdf;}
+			
+			.rightCol .listComments .title span{background-position:0 -315px;}
+			.rightCol .listComments .one a.n em{background:url(icon.png) 9px -706px no-repeat;}
+			
+		.rightCol .recPic{padding-bottom:10px;}
+			.rightCol .recPic table{ margin:0 10px; width:280px;}
+			.rightCol .recPic table td{text-align:center; vertical-align:top; padding:6px 0 3px 0;border-bottom:1px solid #f3efdf;border-right:1px solid #f3efdf;}
+			.rightCol .recPic table .n{ display:block; padding:6px 0;line-height:18px;}
+			.rightCol .recPic .pic{background:url(imgBox_120x90_b.png) right bottom no-repeat; display:inline-block;}
+			.rightCol .recPic .pic img{padding:4px; background:url(imgBox_120x90_t.png) right 0 no-repeat;}
+			.rightCol .recPic .pic:hover{background:url(imgBox_120x90_b.png) 0 bottom no-repeat;}
+			.rightCol .recPic .pic:hover img{background:url(imgBox_120x90_t.png) 0 0 no-repeat;}
+			.rightCol .recPic .title span{background-position:0 -355px;}
+			.rightCol .links .list li a{padding:6px 12px 4px 12px; width:116px; height:15px; line-height:15px; float:left; border-bottom:1px solid #f3efdf;border-right:1px solid #f3efdf;}
+			.rightCol .links .list a:hover{background:#f3efdf;}
+			
+		.rightCol .articleList{height:315px;}
+			.rightCol .articleList .title span{background-position:0 -101px;}
+			.rightCol .flashListHits .title span{background-position:0 -387px;}

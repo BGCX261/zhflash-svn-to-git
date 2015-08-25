@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document */
+
+body,html{ width:100%; margin:0px; padding:0px; font-size:12px; line-height:160%; background-color:#DEDEDE}
+
+a{ color:#333333; text-decoration:none}
+a:hover{ text-decoration:underline}
+
+#body{ width:840px; height:auto; display:block; background-color:#FFFFFF; margin:0px auto;}
+
+#header{ height:80px; width:100%; margin:0px;}
+#header .logo{ width:300px; float:left; height:80px}
+#header .siteInfo{ width:530px; height:80px; float:left; text-align:right; line-height:26px;}
+
+#menu{ height:54px; width:840px;}
+#menu .super{ width:100%; background:url(menu.jpg); height:30px; font-size:14px; font-weight:bold; text-align:center}
+#menu .super a{ padding:0px 30px; line-height:30px; color:#FFFFFF}
+#menu .super a:hover{ color:#FF6600; text-decoration:none}
+#menu .sub{ width:100%; height:24px; line-height:24px; text-align:center}
+#menu .sub a{ padding:0px 5px;}
+
+.location{ width:840px; margin:6px auto; height:22px; background-color:#EFEFEF; line-height:22px;}
+
+#content{ width:840px; margin:0px auto; height:auto;}
+
+#footer{ width:100%; height:auto; padding:15px 0px; text-align:center; clear:both; border-top:2px solid #009900;}
+
+.siderbar{ width:230px; height:auto; float:left; margin:0px;}
+.siderbar .title{ width:100%; height:28px; line-height:28px; font-weight:bolder; color:#FFFFFF; background:url(play-sider.png)}
+.siderbar .box{ width:228px; height:auto; display:table; border:1px solid #009900; border-bottom:3px solid #009900; border-top:none}
+.siderbar .item{ width:114px; height:90px; float:left; text-align:center; margin-top:8px}
+.siderbar .item img{ width:100px; height:70px;}
+.siderbar .item span{ width:100%; height:20px; line-height:20px;}
+
+.pageBreak{ clear:both; float:right;}
+.pageBreak a{ display:block; padding:0px 6px; line-height:20px; background-color:#009900; color:#FFFFFF; margin:0px 2px; float:left}
+.pageBreak a.cur,.pageBreak a:hover{ background-color:#FFFFFF; color:#009900;}
